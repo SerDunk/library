@@ -1,0 +1,69 @@
+/*STYLES*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+nav{
+    display: flex;
+    padding:2em;
+    justify-content: center;
+    gap: 50%;
+    border-bottom: 2px solid;
+
+}
+
+nav > button{
+    padding: 0.5em;
+    width: 50px;
+    border-radius: 15px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form > input{
+    padding: 0.5em;
+}
+
+form > button{
+    width: 40%;
+    padding: 0.2em;
+    align-self: center;
+}
+
+.book-add{
+    text-align: center;
+}
+
+.invisible{
+    display: none;
+}
+
+
+
+
+
+
