@@ -3,6 +3,10 @@ const addBtn=document.querySelector('.add')
 const bookForm=document.querySelector('.book-add')
 const submitBtn=document.querySelector('#submit')
 const pageContent=document.querySelector('.content')
+const read=document.querySelector('.readBtn')
+const notRead=document.querySelector('.notReadBtn')
+
+
 let indexToRemove
 let dataSet=0
 let bookName
@@ -26,11 +30,12 @@ function createCard(book){
     let title=document.createElement('h1')
     let author=document.createElement('h2')
     let removeBtn=document.createElement('button')
-
+    
     removeBtn.setAttribute('data-id',dataSet)
     removeBtn.setAttribute('class','remove')
     dataSet=dataSet+1
     removeBtn.textContent='Remove'
+    removeBtn.classList.add('remBtn')
     title.textContent=book.name
     author.textContent='By '+book.author
     card.append(title,author)
@@ -48,6 +53,7 @@ function createCard(book){
         cardToRemove.remove()
         console.log(library)
     })
+
 }
 
 

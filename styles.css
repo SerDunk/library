@@ -1,4 +1,16 @@
-/*STYLES*/
+/*STYLES AND LAYOUT*/
+
+:root{
+    --logo-font:'Single Day', cursive;
+    --primary-font:'Roboto', sans-serif;
+    --logo-color:#112D4E;
+    --primary-color:#3F72AF;
+    --secondary-color:#F9F7F7;
+    --tertiary-color:#DBE2EF;
+    --read-book:#D4E7C5;
+    --not-read-book:#FF8080;
+}
+
 
 *{
     margin: 0;
@@ -8,6 +20,7 @@
 html,body{
     height: 100%;
     box-sizing: border-box;
+    background-color: var(--tertiary-color);
 }
 
 .wrapper{
@@ -16,23 +29,36 @@ html,body{
     flex-direction: column;
 }
 
-
+.hero{
+    font-size: 2.5rem;
+    font-family: var(--logo-font);
+    color: var(--logo-color);
+}
+.add{
+    color: var(--logo-color);
+    font-family: var(--primary-font);
+    width: 70px;
+    background-color: var(--secondary-color);
+    font-weight: 900;
+    border: solid 2px var(--logo-color);
+}
 nav{
     display: flex;
     padding:2em;
     justify-content: center;
     gap: 50%;
     border-bottom: 2px solid;
+    background-color: var(--secondary-color);
 
 }
 
 nav > button{
     padding: 0.5em;
-    width: 50px;
     border-radius: 15px;
 }
 main{
     min-height: 500px;
+    
 }
 .form{
     display: flex;
@@ -46,6 +72,9 @@ form{
     justify-content: center;
     align-items: center;
     gap: 20px;
+    font-family: var(--primary-font);
+    color: var(--logo-color);
+    
 }
 
 form > input{
@@ -55,10 +84,17 @@ form > input{
 
 form > button{
     width: 100px;
-    padding: 0.2em;
+    padding: 0.3em;
     align-self: center;
+    color: var(--logo-color);
+    font-family: var(--primary-font);
+    background-color: var(--secondary-color);
+    font-weight: 900;
+    border: solid 2px var(--logo-color);
 }
-
+form > h2{
+    color: var(--logo-color);
+}
 .book-add{
     max-width: 200px;
     text-align: center;
@@ -68,6 +104,7 @@ form > button{
     position: absolute;
     z-index: 1;
     top: 150px;
+    background-color: var(--secondary-color);
 }
 
 .invisible{
@@ -92,10 +129,30 @@ form > button{
     justify-content: center;
     align-items: center;
     gap: 3.5em;
+    background-color: var(--secondary-color);
+    color: var(--logo-color);
+    font-family: var(--primary-font);
 }
 
+.remBtn{
+    width: 100px;
+    padding: 0.3em;
+    align-self: center;
+    color: var(--logo-color);
+    font-family: var(--primary-font);
+    background-color: var(--secondary-color);
+    font-weight: 900;
+    border: solid 2px var(--logo-color);
+}
 
+.read{
+    background-color: var(--read-book);
+}
 
+.not-read{
+    background-color: var(--not-read-book);
+}
 
+/*PSEUDO CLASSES*/
 
 
