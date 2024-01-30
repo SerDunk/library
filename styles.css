@@ -128,7 +128,7 @@ form > h2{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 3.5em;
+    gap: 1em;
     background-color: var(--secondary-color);
     color: var(--logo-color);
     font-family: var(--primary-font);
@@ -154,5 +154,39 @@ form > h2{
 }
 
 /*PSEUDO CLASSES*/
+button:hover{
+    cursor: pointer;
+}
 
+.add:hover{
+    color: var(--secondary-color);
+    background-color: var(--logo-color);
+}
 
+.hero:hover{
+    color: var(--tertiary-color);
+    cursor: pointer;
+}
+
+input::placeholder{
+    font-family: var(--primary-font);
+}
+
+input:hover{
+    box-shadow: 2px 1px var(--primary-color);
+}
+
+#submit:hover{
+    color: var(--secondary-color);
+    background-color: var(--logo-color);
+}
+
+.readHover:hover{
+    background-color: var(--read-book);
+    color: var(--tertiary-color);
+}
+
+.notReadHover:hover{
+    background-color: var(--not-read-book);
+    color: var(--tertiary-color);
+}
